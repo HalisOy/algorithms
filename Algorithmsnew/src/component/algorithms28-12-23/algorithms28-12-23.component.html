@@ -1,0 +1,53 @@
+<div class="container">
+
+    <div class="d-flex justify-content-between border">
+        <div>
+            <p>28.12.2023 - 1</p>
+            <p>Pozitifler kendi arasında negatifler kendi arasında toplanan algoritma</p>
+            <div>
+                <input type="number" [(ngModel)]="positiveNegativeNumber">
+                <button (click)="addPositiveNegativeArray()">Listeye ekle</button>
+            </div>
+            <div>Pozitifler: {{PositiveNegativeSum() | json}} :Negatifler</div>
+        </div>
+        <div>
+            <img src="../../assets/2812Case1.png" width="500" alt="">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between border">
+        <div>
+            <p>28.12.2023 - 2</p>
+            <p>dizideki bir sonraki sayısını üssü olarak alıp toplama algoritması</p>
+            <div>
+                <input type="number" [(ngModel)]="powNumber">
+                <button (click)="addPowArray()">Listeye ekle</button>
+            </div>
+            <div>Toplam: {{powArray | json}}</div>
+            <div>Toplam: {{powSum() | json}}</div>
+        </div>
+        <div>
+            <img src="../../assets/2812Case2.png" width="500" alt="">
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-between border">
+        <div>
+            <p>28.12.2023 - 3</p>
+            <p>Farklı dizilerdeki sayılar birbirine eşit mi algoritması</p>
+            <div>
+                <input type="number" [(ngModel)]="aAndBNumber">
+                <button (click)="addArrayA()">1.Listeye ekle</button>
+                <button (click)="addArrayB()">2.Listeye ekle</button>
+            </div>
+            <div>Liste1: {{arrayA | json}} Liste2: {{arrayB | json}}</div>
+            <div>Toplam: {{arrayAandBSum() | json}}</div>
+            <div *ngIf="arrayAandBSum()[0]+arrayAandBSum()[1] !=0 && arrayAandBSum()[0]==arrayAandBSum()[1]">Sayılar
+                Birbirine Eşit</div>
+            <div *ngIf="arrayAandBSum()[0]!=arrayAandBSum()[1]">Sayılar Birbirine Eşit Değil</div>
+        </div>
+        <div>
+            <img src="../../assets/2812Case3.png" width="500" alt="">
+        </div>
+    </div>
+</div>

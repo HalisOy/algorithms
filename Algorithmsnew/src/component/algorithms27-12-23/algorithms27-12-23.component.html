@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>27.12.2023 - 1</p>
+      <p>2 kullanıcı girdikleri sayı indekslerine göre hangisi büyükse o kullanıcı puan kazanıyor</p>
+      <div>
+        <input type="number" [(ngModel)]="UserA">
+        <button (click)="addArrayA()">1. listeye ekle</button>
+        <input type="number" [(ngModel)]="UserB">
+        <button (click)="addArrayB()">2. listeye ekle</button>
+      </div>
+      <div>User 1 {{UserArrayA | json}} User 2 {{UserArrayB | json}}</div>
+      <div>Sonuç: A:{{userCompare()}}:B</div>
+    </div>
+    <div>
+      <img src="../../assets/2712Case1.png" width="500" alt="">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>27.12.2023 - 2</p>
+      <p>Girilen 3 diziyi çaprazlama toplama</p>
+      <div>
+        <input type="number" [(ngModel)]="matrisNumber">
+        <button (click)="addMatrisArray()">Ekle</button>
+      </div>
+      <div>{{matrisArrayFirst | json}}</div>
+      <div>{{matrisArraySecond | json}}</div>
+      <div>{{matrisArrayThird | json}}</div>
+      <div>Toplam: {{matrisSum()}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2712Case2.png" width="500" alt="">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>27.12.2023 - 3</p>
+      <p>Sadece çift olan sayıları çarpma</p>
+      <div>
+        <input type="number" [(ngModel)]="evenNumber">
+        <button (click)="addEvenNumberArray()">Listeye ekle</button>
+      </div>
+      <div>Liste {{evenNumberArray | json}}</div>
+      <div>Sonuç: {{onlyEvenNumberSum()}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2712Case3.png" width="500" alt="">
+    </div>
+  </div>
+</div>

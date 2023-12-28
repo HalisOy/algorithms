@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>26.12.2023 - 1</p>
+      <p>her gün 3 soru yapılması ve her gün soru yapılmadığı için kaç tane yapması gerektiği</p>
+      <div>
+        <input type="number" [(ngModel)]="day" (change)="setNewDay()">
+      </div>
+      <div>{{questArr | json}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2612Case1.png" width="500" alt="">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>26.12.2023 - 2</p>
+      <p>girilen değerlerin en büyüğünün indeksini bulma</p>
+      <div>
+        <input type="number" [(ngModel)]="num">
+        <button (click)="addNumArray()">Ekle</button>
+      </div>
+      <div *ngIf="numArray.length>0">{{getBigNumIndex() | json}} En büyük sayı ve indeksi</div>
+      <div *ngIf="numArray.length>0">{{numArray | json}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2612Case2.png" width="500" alt="">
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>26.12.2023 - 3</p>
+      <p>yanyana girilen 4 sayıyı bulma</p>
+      <div>
+        <input type="number" [(ngModel)]="similarNum">
+        <button (click)="addSimilarArray()">Ekle</button>
+      </div>
+      <div *ngIf="similarArray.length>0">{{similarNumbers() | json}} Tekrar sayılar</div>
+      <div *ngIf="similarArray.length>0">{{similarArray | json}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2612Case3.png" width="500" alt="">
+    </div>
+  </div>
+</div>

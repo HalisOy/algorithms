@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>25.12.2023 - 1</p>
+      <p>iki farklı index toplamı targeti bulursa o sayıların indexlerini çıkarma algoritması</p>
+      <div>
+        <input type="number" [(ngModel)]="num">
+        <button (click)="addNumArray()">Listeye ekle</button>
+        <button (click)="addTarget()">Target ekle</button>
+      </div>
+      <div>Liste {{numArray | json}} Target: {{target}}</div>
+      <div *ngIf="target!=0">Sonuç:{{twoSum(numArray,target)}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2512Case1.png" width="500" alt="">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>25.12.2023 - 2</p>
+      <p>girilen listede bi en küçük bir en büyüğü yazdırıyor.</p>
+      <div>
+        <input type="number" [(ngModel)]="headNumber">
+        <button (click)="addHeadArray()">Listeye ekle</button>
+        <button (click)="reOrderList()">Hesapla</button>
+      </div>
+      <div *ngIf="headArray.length>0">Sonuç: {{headArray | json}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2512Case2.png" width="500" alt="">
+    </div>
+  </div>
+  <div class="d-flex justify-content-between border">
+    <div>
+      <p>25.12.2023 - 3</p>
+      <p>girilen değerin faktöriyelini bulan algoritma.</p>
+      <div>
+        <input type="number" [(ngModel)]="factorialNumber">
+      </div>
+      <div>Sonuç: {{factorialCalc() | json}}</div>
+    </div>
+    <div>
+      <img src="../../assets/2512Case3.png" width="500" alt="">
+    </div>
+  </div>
+</div>
