@@ -1,0 +1,34 @@
+<div class="container d-flex align-items-center flex-column">
+    <div class="wave-group position-relative">
+        <div class="wave-up position-absolute d-flex">
+            <div class="wave-first-char">
+                {{wave1[0]}}
+            </div>
+            <div class="wave-char">
+                {{wave1[1]}}
+            </div>
+            <div class="wave-char">
+                {{wave1[2]}}
+            </div>
+            <div class="wave-char">
+                {{wave1[3]}}
+            </div>
+        </div>
+        <div class="wave-down d-flex mt-5">
+            <div class="wave-first-char">
+                {{wave2[0]}}
+            </div>
+            <div class="wave-char">
+                {{wave2[1]}}
+            </div>
+            <div class="wave-char">
+                {{wave2[2]}}
+            </div>
+            <div class="wave-char">
+                {{wave2[3]}}
+            </div>
+        </div>
+    </div>
+    <button (click)="waveStartLeft()">Wave</button>
+    
+</div>
