@@ -6,6 +6,7 @@ import { Algorithms281223Component } from '../component/algorithms28-12-23/algor
 import { AnimateCaseComponent } from '../component/animate-case/animate-case.component';
 import { MexicanWaveComponent } from '../component/mexican-wave/mexican-wave.component';
 import { ShoppingCartComponent } from '../component/shopping-cart/shopping-cart.component';
+import { DoorAnimateComponent } from '../component/door-animate/door-animate.component';
 
 export const routes: Routes = [
     {path:'',component:Algorithms251223Component},
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path:'algorithms28',component:Algorithms281223Component},
     {path:'animateCase',component:AnimateCaseComponent},
     {path:'mexicanWave',component:MexicanWaveComponent},
-    {path:'shoppingCart',component:ShoppingCartComponent}
+    {path:'shoppingCart',component:ShoppingCartComponent},
+    {path:'doorAnimate',component:DoorAnimateComponent}
 ];

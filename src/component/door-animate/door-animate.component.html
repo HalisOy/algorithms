@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="bg-primary wall">
+        <button (click)="statusDoor(' active')">Aç</button>
+        <button (click)="statusDoor(' notactive')">Kapat</button>
+        <div class="door-frame">
+            <div [class]="'door'+ getClass()">
+            </div>
+        </div>
+    </div>
+</div>
